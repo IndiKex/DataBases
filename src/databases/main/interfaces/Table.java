@@ -16,4 +16,6 @@ public interface Table {
 	public Data getFieldFromKey(String field, Data key);
 	public List<Data> getFieldFromFieldData(String resField, String searchField, Data searchData);
 	public View getViewFromFieldData(String searchField, Data searchData);
+	
+	public void addRecord(List<Data> recordData);
 }

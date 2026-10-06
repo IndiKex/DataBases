@@ -12,6 +12,7 @@ public class NaiveView implements View {
 	private String name;
 	private List<String> fields;
 	private HashMap<Data, List<Data>> dataHash = new HashMap<>();
+	boolean canAdd = true;
 	
 	public NaiveView(String name, List<String> fields, HashMap<Data, List<Data>> dataHash) {
 		this.name = name;
@@ -34,6 +35,17 @@ public class NaiveView implements View {
 	
 	public List<String> getFields() {
 		return fields;
+	}
+	
+
+	public void addRecord(Data key, List<Data> recordData) {
+		if (!canAdd) return;
+		
+		dataHash.put(key, recordData);
+	}
+	
+	public void disableAdd() {
+		canAdd = false;
 	}
 	
 	

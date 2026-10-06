@@ -11,6 +11,9 @@ public interface View {
 	public int getFieldSize();
 	public List<String> getFields();
 	
+	public void addRecord(Data key, List<Data> recordData);
+	public void disableAdd();
+	
 	public Data getFieldFromKey(String field, Data key);
 	
 	public Table createNewTable(boolean temporary);

@@ -9,13 +9,16 @@ import databases.main.interfaces.View;
 
 public class FileTable implements Table {
 	private String name;
+	private int nRecords;
+	
+	public List<String> fieldNames;
 
 	public String getName() {
 		return name;
 	}
 	
 	public int getSize() {
-		
+		return nRecords;
 	}
 	
 	public void loadCSV(File sourceFile, String[] dataTypes) {
@@ -27,11 +30,11 @@ public class FileTable implements Table {
 	}
 	
 	public int getFieldSize() {
-		
+		return fieldNames.size();
 	}
 	
 	public List<String> getFields() {
-		
+		return fieldNames;
 	}
 	
 	
@@ -44,6 +47,11 @@ public class FileTable implements Table {
 	}
 	
 	public View getViewFromFieldData(String searchField, Data searchData) {
+		
+	}
+	
+
+	public void addRecord(List<Data> recordData) {
 		
 	}
 	
