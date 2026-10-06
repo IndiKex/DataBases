@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="DataBases/exports/DataBaseLib.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/DataBases/exports/DataBaseLib.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="false" manifestLocation="/DataBases/exports/MANIFEST.mf" manifestVersion="1.0" reuseManifest="true" saveManifest="true" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <file path="/DataBases/.classpath"/>
+        <file path="/DataBases/.project"/>
+        <javaElement handleIdentifier="=DataBases/src&lt;databases.test{Test.java"/>
+        <javaElement handleIdentifier="=DataBases/src&lt;databases.main.databases"/>
+        <javaElement handleIdentifier="=DataBases/src&lt;databases.main.interfaces"/>
+        <javaElement handleIdentifier="=DataBases/src&lt;databases.main.parsers"/>
+        <javaElement handleIdentifier="=DataBases/src&lt;databases.main.tables"/>
+    </selectedElements>
+</jardesc>
