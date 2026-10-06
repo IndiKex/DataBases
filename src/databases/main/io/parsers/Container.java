@@ -1,4 +1,4 @@
-package databases.main.parsers;
+package databases.main.io.parsers;
 
 import java.util.List;
 
