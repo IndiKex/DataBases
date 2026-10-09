@@ -56,6 +56,6 @@ public class NaiveView implements View {
 	
 	// TODO
 	public Table createNewTable(boolean temporary) {
-		return new FileTable();
+		return new FileTable("");
 	}
 }
